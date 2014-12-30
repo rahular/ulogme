@@ -1,0 +1,2 @@
+python /home/rahul/python/ulogme/ulogme/ulogme_serve.py > /dev/null 2>&1 &
+sudo /home/rahul/python/ulogme/ulogme/ulogme.sh > /dev/null 2>&1 &
