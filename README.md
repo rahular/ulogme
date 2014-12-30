@@ -20,8 +20,9 @@ See a blog post (along with multiple screenshots) describing the project [here.]
 
 ## Getting Started
 
+The usual way
+-------------
 **To start recording**
-*The usual way*
 1. Clone the repository to some folder: `$ git clone https://github.com/karpathy/ulogme.git`
 2. If you're on Ubuntu, make sure you have the dependencies: `$ sudo apt-get install xdotool wmctrl`. On Fedora, you may also need `sudo yum install gnome-screensaver`.
 3. `cd` inside and run `$ ./ulogme.sh` (note: this will ask you for sudo authentication which is required for `showkey` command). This will launch two scripts. One records the frequency of keystrokes and the other records active window titles. Both write their logs into log files in the `logs/` directory. Every log file is very simply just the unix time stamp followed by data, one per line.
@@ -33,7 +34,8 @@ See a blog post (along with multiple screenshots) describing the project [here.]
 2. Once that's set up, start the web server viewer: `$ python ulogme_serve.py`, and go to to the provided address) for example `http://localhost:8123`) in your browser. Hit the refresh button on top right every time you'd like to refresh the results based on most recently recorded activity
 3. If your data isn't loading, try to explicitly run `python export_events.py` and then hit refresh. This should only be an issue the very first time you run ulogme.
 
-*A simpler way*
+A simpler way
+-------------
 1. There is a file called `start_service` in the project's root folder. Add it's full path to `sudoers`.
 ```
 $ sudo visudo
