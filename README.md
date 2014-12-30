@@ -38,6 +38,7 @@ See a blog post (along with multiple screenshots) describing the project [here.]
 <h4>A simpler way</h4>
 
 (Not tested on OSX)
+
 There is a file called `start_service` in the project's root folder. Add it's full path to `sudoers`.
 ```
 $ sudo visudo
