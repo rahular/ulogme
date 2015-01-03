@@ -18,6 +18,8 @@ var title_mappings = [
 {pattern : /Telegram/, mapto : 'Telegram'},
 {pattern : /__LOCKEDSCREEN/, mapto : 'Locked Screen'}, // __LOCKEDSCREEN is a special token
 {pattern : /TeXworks/, mapto : 'Latex'},
+{pattern : /Python/, mapto : 'Python'},
+{pattern : /VLC/, mapto : 'Videos'}
 ];
 
 // be very careful with ordering in the above because titles
@@ -46,9 +48,9 @@ function mapwin(w) {
 // to group my work stuff and play stuff together.
 var display_groups = [];
 display_groups.push(["Gmail", "Google Chrome", "MISC", "Telegram"]); // internet related
-display_groups.push(["Matlab", "Gedit", "INotebook", "Terminal", "Papers"]); // work related
+display_groups.push(["Matlab", "Gedit", "INotebook", "Terminal", "Papers", "Python"]); // work related
 display_groups.push(["TeXworks"]); // paper writing related
-display_groups.push(["Locked Screen"]); // computer not being used 
+display_groups.push(["Locked Screen", "Videos"]); // computer not being used 
 
 // list of titles that classify as "hacking", or being productive in general
 // the main goal of the day is to get a lot of focused sessions of hacking
@@ -56,7 +58,7 @@ display_groups.push(["Locked Screen"]); // computer not being used
 // classify as hacking, and they break "streaks" (events of focused hacking)
 // the implementation is currently quite hacky, experimental and contains 
 // many magic numbers.
-var hacking_titles = ["INotebook", "Terminal", "Matlab", "Gedit"];
+var hacking_titles = ["INotebook", "Terminal", "Matlab", "Gedit", "Python"];
 var draw_hacking = true; // by default turning this off
 
 // draw notes row?

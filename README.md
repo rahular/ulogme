@@ -39,13 +39,13 @@ See a blog post (along with multiple screenshots) describing the project [here.]
 
 (Not tested on OSX)
 
-There is a file called `start_service` in the project's root folder. Add it's full path to `sudoers`.
+There is a script called `keyfreq.sh` in the project's root folder. Add it's full path to `sudoers`.
 ```
 $ sudo visudo
 ```
 (Once inside the file, add this line right before the `#includedir`)
 ```
-<username> ALL = NOPASSWD: /full/path/to/start_service
+<username> ALL = NOPASSWD: /full/path/to/keyfreq.sh
 ```
 As a one-time setup, do the following:
 ```
